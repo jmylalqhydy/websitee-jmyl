@@ -1,0 +1,273 @@
+﻿*{
+  direction:rtl;
+  margin:0;
+  padding:0;
+}
+body {
+    background-color: rgb(248, 248, 214);
+    width:100%;
+}
+ 
+::selection{
+    background-color: black;
+    color: white;
+}
+#p1{
+-webkit-user-select: none;
+}
+
+.main_head {
+   
+    height: 110px;
+    background-image: url('sss/dd.jpg');
+    background-position: center; 
+}
+ h1{
+     font-size:42px;
+     font-family:ae_AlBattar;
+     text-align:center;
+     -- line-height:0px;
+     color:white;
+
+ }
+.menulist {
+    width:100%;
+    background-color: #5964c9;
+    font-size: 20px;
+    font-family: ae_AlArabiya;
+    height:60px;
+}
+
+.menulist > ul{
+    margin:0;
+    padding:0;
+    float:right;
+    list-style-type:none;
+
+}
+.menulist > ul >li {
+        
+        float: right;
+       
+    }
+
+.list-item {
+    display: inline-block;
+    padding: 15px 20px;
+    height:30px;
+    line-height:30px;
+    color:white;
+   text-decoration:none;
+}
+
+.list-item:hover{
+    background-color:rgb(5, 134, 11);
+}
+
+/*----------------------------list drop---------------------------------*/
+.contance {
+    position: absolute;
+    overflow: hidden;
+    background-color: #e9e5e1;
+    max-height:0;
+}
+
+ .contance a {
+        color: rgb(23, 93, 158);
+        text-decoration: none;
+    }
+
+.drop{
+    padding:0;
+}
+
+.drop ul {
+    width:100%;
+       padding: 0;
+       margin: 0;
+       list-style-type:none;
+    }
+    .drop ul li a {
+        display:inline-block;
+        padding: 10px 20px;
+     
+    }
+
+    .drop ul li:hover {
+        background-color: rgb(61, 202, 56);
+    }
+
+/*----------------------------التحكم في عرض القائمة---------------------------------*/
+
+.list-item:focus {
+    background-color: rgb(192, 121, 192);
+}
+
+.menulist ul li:hover  .contance {
+    max-height: 800px;
+    overflow:visible;
+   transition: max-height 0.1s ease-in;
+}
+
+/*----------------------------قائمة داخل قائمة---------------------------------*/
+#inlist {
+    position: absolute;
+    top: 0px;
+    background-color: #e7fbff;
+    right: 152px;
+    overflow: hidden;
+    max-width: 0;
+    -- border-radius: 30px;
+}
+.drop ul li:hover > ul#inlist{
+    max-width:800px;
+}
+
+
+
+
+.search {
+    float: left;
+    margin-left: 10px;
+    margin-top: 40px;
+    color: white;
+    font-size: 18px;
+}
+
+.login {
+    float: right;
+    -- display: inline-block;
+    margin-right: 10px;
+    margin-top: 10px;
+    color:white;
+    font-size:18px;
+}
+/*----------------------------محتوى الموقع---------------------------------*/
+.main_web {
+    width: 75%;
+    margin: 0;
+    float:right;
+    display:inline-block;
+}
+.foot {
+    margin-top:1500px;
+    background-color: rgb(92, 190, 47);
+    height: 100px;
+
+}
+.fo {
+    color:white;
+}
+.fo:hover{
+    color:yellow;
+}
+
+a {
+    text-decoration: none;
+}
+.linke:visited, .linke:link {
+    color: brown
+}
+.linke:hover, .linke:active {
+    color: #0a33b9;
+    
+}
+
+.part_web {
+    background-color: rgb(210, 238, 255);
+    padding: 15px;
+    padding-top: 2px;
+    margin-right: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    font-family: 'Yu Gothic UI';
+    
+}
+.coment{
+   
+    font-size:22px;
+    color:rgba(24, 194, 2, 0.651);
+    font-family:'التعاون بولد أرت 507677';
+    font
+}
+.asid {
+    background: color #85ec85;
+    padding: 10px;
+    padding-top: 2px;
+    font-size: 18px;
+    margin-top: 15px;
+    font-family: 'Yu Gothic UI';
+    float: left;
+    width: 23%;
+    display:inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:411px) {
+    nav {
+        
+        padding: 10px;
+        font-size: 10px;
+        font-family: ae_AlArabiya;
+    }
+
+    li {
+        
+        padding-left:8px;
+    }
+    a:link, a:visited {
+        text-decoration: none;
+        color: white;
+    }
+
+    a:hover, a:active {
+        text-decoration: underline;
+        -- color: #ff6a00;
+        background-color: gold;
+        padding: 10px 1px;
+        
+    }
+
+}
+
+@media screen and (max-width:758px) {
+    nav {
+        padding: 10px;
+        font-size: 12px;
+        font-family: ae_AlArabiya;
+    }
+
+    li {
+        padding-left: 8px;
+    }
+
+    a:link, a:visited {
+        text-decoration: none;
+        color: white;
+    }
+
+    a:hover, a:active {
+        text-decoration: underline;
+        background-color: gold;
+        padding: 10px 1px;
+    }
+
+
+    /*<hr style="width:600px; border-color:brown; margin-bottom:10px;" / >
+        Downloading progress:
+<progress value="22" max="100">
+</progress>
+
+       <abbr title="webpage"> Betternet VPN Premium Proxy</abbr></b>
+   */

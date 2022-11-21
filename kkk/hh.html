@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="موقع شخصي">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع صاحب القول السديد</title>
+    <link rel="stylesheet" href="styel.css">
+    <script>
+        window.alert("نبذة عن صاحب القول السديد");
+        console.log(20*3);
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="brand">
+                <h1 >  رحاب القائد </h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="curent"> <a href="indsx.html">الصفحة الرئيسة</a> </li>
+                        <li ><a href="الواجب/po.html" target="_blank">ولادته ونشئاته</a></li>
+                        <li ><a href="باقر/تابع المشروع.html"> حياته وأعماله</a> </li>
+                        <li ><a href="#">  المحاضرات واللقائات السياسية</a> </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="cass">
+
+    </section>
+
+    <section id="newsletter">
+        <div class="container">
+            <h1 id="p1">اشترك بالنشرة البريدية</h1>
+            <form action="">
+                <input type="email" placeholder="ادخل بريدك الألكتروني">
+                <button type="submit" onclick="document.getElementById('p1').innerHTML='ارحبوا'" class="button ">اشترك</button>
+
+            </form>
+        </div>
+    </section>
+
+    <section id="boxes">
+        <!-- <p>
+          <img src="image/d.pjg" width="300px">
+        </p> -->
+        <div class="container">
+            <div class="box">
+                <p>
+                    <img  id=(im1)  src="imegs/d.jpg" width="320px"onclick="changeimg()" >
+                    <script>
+                        function changeimg(){
+                            var x=document.getElementById('im1');
+                            if( x.src.match('imegs/d.jpg'))
+                            { x.src="kk/m.jpg" }
+                            else{
+                                x.src="imegs/d.jpg"
+                            }
+                            
+                        }
+                    </script>
+                </p>
+            <h3 oncopy="">صاحب القول السديد</h3>
+        </div>
+        <div class="box">
+            <p>
+                <img src="imegs/sp.jpg" width="320px">
+            </p> 
+            <h3>السيد /عبدالملك بدر الدين الحوثي</h3>
+        </div>
+        <div class="box">
+            <p oncopy="copy()">
+                <img src="imegs/e.jpg" width="320px" id="m" onmouseover="fun2(this)" onmousemove="fun1(this)">
+                
+            </p> 
+            <h3>المولد النبوي الشريف </h3>
+        </div>
+
+    </div>
+</section>
+
+</body>
+
+<footer>
+<p oncopy="copy()">الموقع الرسمي ل جميل القهيدي  هـ1444 </p>
+</footer>
+</html>

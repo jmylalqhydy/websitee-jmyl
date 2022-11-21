@@ -1,0 +1,151 @@
+body{
+    font-family: ttr;
+    padding:0 ;
+    margin: 0;
+    background-color:#f4f4f4;
+    direction: rtl;
+    
+}
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+  ul{
+    margin: 0%;
+    padding: 0%;
+    
+  }  
+header{
+    background-image:url("p.jpg");
+    color: white;
+    padding-top: 30px;
+    min-height: 50px;
+    border-bottom:rgb(151, 151, 151) 10px solid ;
+}
+header a{
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+
+}
+header li{
+    float: right;
+    display: inline;
+    padding: 0 15px 0 15px  ;
+}
+header #brand{
+    float: right;
+
+
+}
+header #brand h1{
+    margin: 0px;
+    color:rgb(75, 36, 36);
+}
+header nav{
+    float: left;
+    margin-top: 10px;
+}
+header .curent a {
+    color: rgb(196, 202, 181);
+    font-weight: bold;
+}
+header a:hover{
+    color: green;
+    font-weight: bold;
+}
+#cass{ 
+    min-height: 520px;
+    background: url("m.jpg") no-repeat center;
+    background-size:cover;
+}
+#newsletter{ 
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    background: rgb(113, 143, 125);
+}
+#newsletter h1{
+    float: right;
+}
+#newsletter form{
+     
+    float: left;
+    margin-top: 20px;
+}
+#newsletter input[type="eamil"]
+{
+    padding: 4px;
+    height: 35px;
+    width: 250px;
+    background-color: rgb(87, 170, 128);
+}
+.button{
+    height: 25px;
+    background: rgb(79, 138, 109);
+    padding-right: 20px;
+    padding-left: 20px;
+
+
+}
+#boxes{
+    margin-top: 25px;
+
+}
+#boxes .box 
+{
+    float: right;
+    text-align:center;
+    width: 31%;
+    padding: 7px;
+}
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    color: white;
+    background-image: url("f.jpg");
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+
+}
+@media  (max-width: 768px)
+{
+    header #brand,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    {
+        float: none;
+        text-align:cente;
+        width: 100%;
+    }
+    header{
+        padding-bottom: 20px;
+    }
+#newsletter .button{
+    display: block;
+    width: 100%;
+}
+#newsletter form input[type="eamil"]{
+    width: 100%;
+    margin-bottom: 5px;
+}
+@font-face{
+    font-size: ttr;
+    src: url(font/Foresight\ .otf);
+}
+
+
+
+
+
+
+
+ 
+
+
+
+
